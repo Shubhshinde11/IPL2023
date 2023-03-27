@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-image: 
+                 url("./images/bkg.jpg");
+
+            background-repeat: no-repeat;
+            background-size: cover;
+          width: 100%;
+          height: 100%;
+            
+        }
+    </style>
+    <title>ipl2021</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <header id="header" class="top">
+        
+
+        <div id="topelement">
+            <img src="./images/logo.png" alt="logo" width="100" height="60"/>
+            
+            <a href="index.html" class="space">HOME</a>
+            <a href="index.html"class="space">TEAMS</a>
+        <a href="index.html"class="space">NEWS</a>
+        
+        
+        </div>
+        
+    </header>
+    <div class="gang">
+        <h2>CREATE YOUR TEAM HERE</h2>
+      
+      
+      <form id="Form">
+        <p>
+            
+            <label><b>ENTER YOUR TEAM NAME :</label></b><br>
+        <input id="inputName" type="text" placeholder=" Team Name">
+        <label><b>ENTER TEAM LOGO URL</label></b><br>
+        <input id="inputName2" type="text" placeholder="Url">
+        </p>
+        <button id="button" onclick="buttonclick()">CREATE</button>
+        <button id="button2" onclick="button2click()">DELETE</button>
+      </form>
+    </div>
+    <div id="yourteam">
+        
+
+
+
+    </div>
+    
+    <div id="home">
+        
+    </div>
+    <script>
+        function button2click(){
+    localStorage.clear()
+    var team=document.getElementById("yourteam")
+    team.style.display="none"
+    window.location.href = "index.html";
+}
+    </script>
+    
+    <script src="index.js"></script>
+</body>
